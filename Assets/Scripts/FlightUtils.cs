@@ -8,7 +8,20 @@ public class FlightUtils : MonoBehaviour
     public InputActionReference _headPosition;
     public InputActionReference _leftHandPosition;
     public InputActionReference _rightHandPosition;
+    public InputActionReference _leftVelocityReference;
+    public InputActionReference _rightVelocityReference;
+
     public float maxWingSpan = 1.7f; // TODO: use GetHandsDistanceHorizontal in a config scene
+
+    public Vector3 LeftHandVelocity()
+    {
+        return _leftVelocityReference.action.ReadValue<Vector3>();
+    }
+
+    public Vector3 RightHandVelocity()
+    {
+        return _rightVelocityReference.action.ReadValue<Vector3>();
+    }
 
     public float DistanceHandsHorizontal()
     {

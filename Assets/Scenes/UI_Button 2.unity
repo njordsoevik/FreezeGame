@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5493609, g: 0.79545873, b: 0.9734807, a: 1}
+  m_IndirectSpecularColor: {r: 0.5529837, g: 0.79730403, b: 0.9626365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2065,7 +2065,6 @@ GameObject:
   - component: {fileID: 865707148}
   - component: {fileID: 865707150}
   - component: {fileID: 865707153}
-  - component: {fileID: 865707155}
   - component: {fileID: 865707154}
   m_Layer: 0
   m_Name: XR Origin
@@ -2188,36 +2187,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 865707144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a710b34e8dac1c54c97e29ed4e5bb07d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e2231f2e4f942c49af7e0526b7c4616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flapForce: 0.5
-  upwardFlapReduceForce: 0.2
-  gravityModifier: 1
-  dragModifier: 2
-  forwardCameraReference: {fileID: 1027935109}
-  leftReference: {fileID: 1100213222}
-  rightReference: {fileID: 46622378}
-  _leftVelocityReference: {fileID: 3069694442466783731, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+  leftPad: {fileID: 1100213222}
+  rightPad: {fileID: 46622378}
   _leftFlightButton: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _rightVelocityReference: {fileID: 2911243746862894866, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   _rightFlightButton: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f, type: 3}
---- !u!114 &865707155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 865707144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bcd1ca647ff4a5743a3301d4badcd173, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _headPosition: {fileID: 7862207684358717888, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _leftHandPosition: {fileID: -2024308242397127297, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  _rightHandPosition: {fileID: -3326005586356538449, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  maxWingSpan: 1.7
+  flapForce: 0.15
 --- !u!64 &872631341
 MeshCollider:
   m_ObjectHideFlags: 0
