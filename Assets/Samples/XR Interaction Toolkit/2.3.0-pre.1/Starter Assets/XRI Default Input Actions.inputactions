@@ -1728,6 +1728,24 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
+                },
+                {
+                    "name": "Right Velocity",
+                    "type": "Value",
+                    "id": "15b95f48-9ac1-4067-93ee-9575f9759db3",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Left Velocity",
+                    "type": "Value",
+                    "id": "deeccc89-68e0-4fef-a645-69c7687c5e42",
+                    "expectedControlType": "Vector3",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 }
             ],
             "bindings": [
@@ -1816,6 +1834,28 @@
                     "processors": "",
                     "groups": "Generic XR Controller",
                     "action": "Left Joystick Value",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6377a5b-29c5-49a6-b8d7-4a8e2464d2e1",
+                    "path": "<XRController>{RightHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Right Velocity",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fa5bb72b-4b73-4077-9e34-6f4ec3e45f9c",
+                    "path": "<XRController>{LeftHand}/deviceVelocity",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Velocity",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
